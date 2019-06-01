@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.Join">
+
+    <include layout="@layout/appbar_layout_default"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="40dp">
+
+        <TextView
+                android:layout_marginTop="60dp"
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter Join code"/>
+
+        <EditText
+                android:id="@+id/et_joinCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Join Code"
+                android:padding="8dp"
+                android:layout_margin="8dp"
+                android:inputType="textPersonName"
+        android:background="@drawable/button_bg1"/>
+
+        <Button
+                android:id="@+id/btn_join"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Join"
+                android:textColor="#fff"
+                android:layout_gravity="right"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/button_selected"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

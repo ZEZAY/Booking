@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.Booking">
+
+    <include layout="@layout/appbar_layout_default"/>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="8dp">
+
+        <LinearLayout
+                android:layout_marginTop="60dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Room Code"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Booking User"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal">
+
+            <EditText
+                    android:id="@+id/et_roomCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Room Code"
+                    android:background="@drawable/button_bg1"
+                    android:padding="8dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_weight="1"
+                    android:inputType="text"/>
+
+            <EditText
+                    android:background="@drawable/button_bg1"
+                    android:padding="8dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Booking User"
+                    android:layout_weight="1"
+                    android:id="@+id/et_bookUser"/>
+
+        </LinearLayout>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date"/>
+
+
+        <Button
+                android:background="@drawable/button_bg1"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="left"
+                android:textSize="18dp"
+                android:hint="Date"
+                android:inputType="text"
+                android:id="@+id/et_date"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Starting"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Ending"/>
+
+        </LinearLayout>
+
+
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <Button
+                        android:id="@+id/et_starting"
+                        android:layout_height="40dp"
+                        android:gravity="left"
+                        android:textSize="18dp"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_bg1"
+                        android:padding="8dp"
+                        android:layout_marginEnd="4dp"
+                        android:hint="Time Starting"/>
+
+                <Button
+                        android:id="@+id/et_ending"
+                        android:layout_height="40dp"
+                        android:gravity="left"
+                        android:textSize="18dp"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_bg1"
+                        android:padding="8dp"
+                        android:layout_marginStart="4dp"
+                        android:hint="Time Ending"/>
+
+            </LinearLayout>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Detail"/>
+
+            <EditText
+                    android:id="@+id/et_detail"
+                    android:background="@drawable/button_bg1"
+                    android:padding="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Add Note"
+                    android:inputType="text"/>
+
+            <Button
+                    android:id="@+id/btn_save"
+                    android:hint="SAVE"
+                    android:background="@drawable/button_selected"
+                    android:textColorHint="#FFFFFF"
+                    android:layout_gravity="right"
+                    android:layout_margin="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+        </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

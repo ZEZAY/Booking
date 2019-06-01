@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.CalendarActivity">
+
+    <include layout="@layout/appbar_layout_default"/>
+
+    <LinearLayout
+            android:layout_marginTop="50dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" tools:layout_editor_absoluteY="81dp"
+            tools:layout_editor_absoluteX="0dp" tools:ignore="MissingConstraints">
+        <CalendarView
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:id="@+id/calendarView"/>
+
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/calRecyclerView"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
